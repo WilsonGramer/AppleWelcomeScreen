@@ -88,6 +88,8 @@ public class AWSViewController: UIViewController {
         self.view.addSubview(self.continueButton)
         
         // Scroll view
+        self.scrollView.alwaysBounceVertical = true
+        
         self.scrollView.snp.makeConstraints { (make) in
             make.top.equalTo(self.view.snp.topMargin)
             make.bottom.equalTo(self.continueButton.snp.top).offset(-20)
