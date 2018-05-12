@@ -65,7 +65,7 @@ pod 'AppleWelcomeScreen'
 
 ## Author
 
-Wilsonator5000, wilsonator5000@gmail.com
+Wilsonator5000, wgramer03@gmail.com
 
 ## License
 
