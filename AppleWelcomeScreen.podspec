@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppleWelcomeScreen'
-  s.version          = '1.0'
+  s.version          = '1.0.1'
   s.summary          = 'A super-simple welcome screen creator for iOS.'
 
   s.swift_version    = '4.1'
@@ -42,5 +42,6 @@ AppleWelcomeScreen is a super-simple way to create a welcome screen/onboarding e
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
+  s.frameworks = 'UIKit'
   s.dependency 'SnapKit'
 end
