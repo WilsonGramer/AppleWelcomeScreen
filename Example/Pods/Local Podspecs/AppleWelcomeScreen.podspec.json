@@ -1,0 +1,27 @@
+{
+  "name": "AppleWelcomeScreen",
+  "version": "1.0",
+  "summary": "A super-simple welcome screen for iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Wilsonator5000/AppleWelcomeScreen",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wilsonator5000": "wgramer03@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Wilsonator5000/AppleWelcomeScreen.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "AppleWelcomeScreen/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}

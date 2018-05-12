@@ -1,0 +1,6 @@
+framework module AppleWelcomeScreen {
+  umbrella header "AppleWelcomeScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}
