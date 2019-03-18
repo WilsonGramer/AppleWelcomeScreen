@@ -3,9 +3,4 @@ use_frameworks!
 target 'AppleWelcomeScreen_Example' do
   pod 'AppleWelcomeScreen', :path => '../'
 
-  target 'AppleWelcomeScreen_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

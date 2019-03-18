@@ -1,23 +1,16 @@
 PODS:
-  - AppleWelcomeScreen (1.0):
-    - SnapKit
-  - SnapKit (4.0.0)
+  - AppleWelcomeScreen (1.0.1)
 
 DEPENDENCIES:
   - AppleWelcomeScreen (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - SnapKit
 
 EXTERNAL SOURCES:
   AppleWelcomeScreen:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppleWelcomeScreen: f5b1fd9a25794206135ebcf8fc8b239872a595e3
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  AppleWelcomeScreen: 40fa9bb313c1b4c79eab4ed2a1a07b60e0e6d621
 
-PODFILE CHECKSUM: e788645dce2ef839d7b7f998c68da955811ea4a2
+PODFILE CHECKSUM: 9c49f2873ca538a46c6b68060122174bf7f10164
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.7.0.beta.2

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A6739CA295317CA12BF0FC4 /* Pods_AppleWelcomeScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB23A73BC4769C2ADA98F28E /* Pods_AppleWelcomeScreen_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		871F28A0DD02D71D40006E71 /* Pods_AppleWelcomeScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF41E6F63C57F87263FF4763 /* Pods_AppleWelcomeScreen_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +23,10 @@
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7CB32783FE96F149E7D15120 /* Pods-AppleWelcomeScreen_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppleWelcomeScreen_Tests/Pods-AppleWelcomeScreen_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		82CEAF4960D91E9438AA0631 /* Pods-AppleWelcomeScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
-		99A0F40F890A7B9FD34745AB /* Pods_AppleWelcomeScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleWelcomeScreen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5A0E8DEA4B878262B0C2495 /* Pods-AppleWelcomeScreen_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppleWelcomeScreen_Tests/Pods-AppleWelcomeScreen_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB23A73BC4769C2ADA98F28E /* Pods_AppleWelcomeScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleWelcomeScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8748AA10AE5EFCA67E3FFA8C /* Pods-AppleWelcomeScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Example.release.xcconfig"; path = "Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C467CE57DF83E28351BB0DC6 /* AppleWelcomeScreen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AppleWelcomeScreen.podspec; path = ../AppleWelcomeScreen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EB5BF895890496047191DE2E /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FBA720EE770D9376466A6453 /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleWelcomeScreen_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FF41E6F63C57F87263FF4763 /* Pods_AppleWelcomeScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleWelcomeScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,32 +34,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A6739CA295317CA12BF0FC4 /* Pods_AppleWelcomeScreen_Example.framework in Frameworks */,
+				871F28A0DD02D71D40006E71 /* Pods_AppleWelcomeScreen_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1642C8394745FB598FD93296 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB5BF895890496047191DE2E /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */,
-				82CEAF4960D91E9438AA0631 /* Pods-AppleWelcomeScreen_Example.release.xcconfig */,
-				A5A0E8DEA4B878262B0C2495 /* Pods-AppleWelcomeScreen_Tests.debug.xcconfig */,
-				7CB32783FE96F149E7D15120 /* Pods-AppleWelcomeScreen_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AppleWelcomeScreen */,
 				607FACD11AFB9204008FA782 /* Products */,
-				1642C8394745FB598FD93296 /* Pods */,
-				BD069413752757C51C9796CF /* Frameworks */,
+				8AFCCB430827279CD9A04FD8 /* Pods */,
+				B951FB97372C7D0AF55711F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +91,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		BD069413752757C51C9796CF /* Frameworks */ = {
+		8AFCCB430827279CD9A04FD8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BB23A73BC4769C2ADA98F28E /* Pods_AppleWelcomeScreen_Example.framework */,
-				99A0F40F890A7B9FD34745AB /* Pods_AppleWelcomeScreen_Tests.framework */,
+				FBA720EE770D9376466A6453 /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */,
+				8748AA10AE5EFCA67E3FFA8C /* Pods-AppleWelcomeScreen_Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B951FB97372C7D0AF55711F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF41E6F63C57F87263FF4763 /* Pods_AppleWelcomeScreen_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,11 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AppleWelcomeScreen_Example" */;
 			buildPhases = (
-				0AFFA73539E680CD7D0EABC4 /* [CP] Check Pods Manifest.lock */,
+				05ED4CF2619BC4C7E9838A06 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				76EC573B67FBF8542FD4C204 /* [CP] Embed Pods Frameworks */,
+				E454071E8D515AD647857598 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,16 +179,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AFFA73539E680CD7D0EABC4 /* [CP] Check Pods Manifest.lock */ = {
+		05ED4CF2619BC4C7E9838A06 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AppleWelcomeScreen_Example-checkManifestLockResult.txt",
 			);
@@ -202,24 +201,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		76EC573B67FBF8542FD4C204 /* [CP] Embed Pods Frameworks */ = {
+		E454071E8D515AD647857598 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AppleWelcomeScreen/AppleWelcomeScreen.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppleWelcomeScreen.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleWelcomeScreen_Example/Pods-AppleWelcomeScreen_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -349,7 +346,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB5BF895890496047191DE2E /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */;
+			baseConfigurationReference = FBA720EE770D9376466A6453 /* Pods-AppleWelcomeScreen_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D42D4S8LQX;
@@ -366,7 +363,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82CEAF4960D91E9438AA0631 /* Pods-AppleWelcomeScreen_Example.release.xcconfig */;
+			baseConfigurationReference = 8748AA10AE5EFCA67E3FFA8C /* Pods-AppleWelcomeScreen_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D42D4S8LQX;

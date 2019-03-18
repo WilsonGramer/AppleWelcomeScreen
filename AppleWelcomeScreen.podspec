@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.1'
   s.summary          = 'A super-simple welcome screen creator for iOS.'
 
-  s.swift_version    = '4.1'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -43,5 +43,4 @@ AppleWelcomeScreen is a super-simple way to create a welcome screen/onboarding e
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.frameworks = 'UIKit'
-  s.dependency 'SnapKit'
 end
