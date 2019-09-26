@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## AppleWelcomeScreen
 
-Copyright (c) 2018 Wilsonator5000 <wilsonator5000@gmail.com>
+Copyright (c) 2018 Wilsonator5000 <wgramer03@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

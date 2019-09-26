@@ -36,12 +36,10 @@ public struct AWSConfigOptions {
     public var continueButtonAction: (() -> ())?
     
     /// The tint of the welcome screen. This color will be reflected in the color of the app name and the "Continue" button.
-    public var tintColor: UIColor = .blue
+    public var tintColor: UIColor = SystemColor.systemBlue
     
     public init() { }
 }
-
-fileprivate let awsTextColor = UIColor(white: 0.075, alpha: 1.0)
 
 /// The view controller that displayes the welcome screen.
 public class AWSViewController: UIViewController {
@@ -69,7 +67,7 @@ public class AWSViewController: UIViewController {
         assert((self.configuration != nil), "Please provide a configuration for the welcome screen to use.")
         
         self.title = "Welcome to \(self.configuration.appName)"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = SystemColor.systemBackground
         
         self.itemsTableViewManager = AWSItemsTableViewManager()
         self.itemsTableViewManager.items = self.configuration.items
@@ -108,7 +106,7 @@ public class AWSViewController: UIViewController {
         
         // "Welcome to" label
         self.welcomeToLabel.text = "Welcome to"
-        self.welcomeToLabel.textColor = .darkText
+        self.welcomeToLabel.textColor = SystemColor.label
         self.welcomeToLabel.font = UIFont.systemFont(ofSize: self.getHeaderFontSize(), weight: .heavy)
         self.welcomeToLabel.adjustsFontSizeToFitWidth = true
         
@@ -135,7 +133,7 @@ public class AWSViewController: UIViewController {
         // App description label
         self.appDescriptionLabel.text = self.configuration.appDescription
         self.appDescriptionLabel.font = UIFont.systemFont(ofSize: self.getSubtitleFontSize(), weight: .regular)
-        self.appDescriptionLabel.textColor = awsTextColor
+        self.appDescriptionLabel.textColor = SystemColor.label
         self.appDescriptionLabel.numberOfLines = 0
         
         self.appDescriptionLabel.snp.makeConstraints { (make) in
@@ -158,7 +156,6 @@ public class AWSViewController: UIViewController {
             make.right.equalTo(self.contentView.snp.rightMargin)
             make.bottom.equalTo(self.contentView.snp.bottom)
         }
-        self.itemsTableView.backgroundColor = .orange
         
         // "Continue" button
         self.continueButton.setTitle(self.configuration.continueButtonText, for: .normal)
@@ -335,7 +332,7 @@ fileprivate class AWSItemCell: UITableViewCell {
         
         self.itemTitleLabel.text = self.item.title
         self.itemTitleLabel.font = UIFont.systemFont(ofSize: self.getBodyFontSize(), weight: .bold)
-        self.itemTitleLabel.textColor = awsTextColor
+        self.itemTitleLabel.textColor = SystemColor.label
         self.itemTitleLabel.numberOfLines = 0
         
         self.contentView.addSubview(self.itemTitleLabel)
@@ -351,7 +348,7 @@ fileprivate class AWSItemCell: UITableViewCell {
         
         self.itemDescriptionLabel.text = self.item.description
         self.itemDescriptionLabel.font = UIFont.systemFont(ofSize: self.getBodyFontSize(), weight: .regular)
-        self.itemDescriptionLabel.textColor = awsTextColor
+        self.itemDescriptionLabel.textColor = SystemColor.secondaryLabel
         self.itemDescriptionLabel.numberOfLines = 0
         
         self.contentView.addSubview(self.itemDescriptionLabel)
@@ -411,5 +408,64 @@ fileprivate class AWSItemCell: UITableViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+/// Adapted from https://github.com/Wilsonator5000/SystemColor
+fileprivate enum SystemColor {
+    /// The color for the main background of your interface.
+    static var systemBackground: UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.systemBackground
+        } else {
+            return UIColor(
+                red: 1.0,
+                green: 1.0,
+                blue: 1.0,
+                alpha: 1.0
+            )
+        }
+    }
+
+    /// A blue color that automatically adapts to the current trait environment.
+    static var systemBlue: UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.systemBlue
+        } else {
+            return UIColor(
+                red: 0.0,
+                green: 0.47843137254901963,
+                blue: 1.0,
+                alpha: 1.0
+            )
+        }
+    }
+
+    /// The color for text labels containing primary content.
+    static var label: UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.label
+        } else {
+            return UIColor(
+                red: 0.0,
+                green: 0.0,
+                blue: 0.0,
+                alpha: 1.0
+            )
+        }
+    }
+
+    /// The color for text labels containing secondary content.
+    static var secondaryLabel: UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.secondaryLabel
+        } else {
+            return UIColor(
+                red: 0.23529411764705882,
+                green: 0.23529411764705882,
+                blue: 0.2627450980392157,
+                alpha: 0.6
+            )
+        }
     }
 }
