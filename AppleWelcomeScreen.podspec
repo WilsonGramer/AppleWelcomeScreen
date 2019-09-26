@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppleWelcomeScreen'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A super-simple welcome screen creator for iOS.'
 
   s.swift_version    = '4.1'
