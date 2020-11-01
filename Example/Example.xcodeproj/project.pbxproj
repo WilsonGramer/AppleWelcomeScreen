@@ -13,6 +13,7 @@
 		C87C37D1254E1ED2002407DB /* AppleWelcomeScreen in Frameworks */ = {isa = PBXBuildFile; productRef = C87C37D0254E1ED2002407DB /* AppleWelcomeScreen */; };
 		C87C37D7254E1F2C002407DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87C37D6254E1F2C002407DB /* Assets.xcassets */; };
 		C87C37DB254E1F57002407DB /* WelcomeScreenConfiguration+MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C37DA254E1F57002407DB /* WelcomeScreenConfiguration+MyApp.swift */; };
+		C87C37E2254E3ADF002407DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C37E1254E3ADF002407DB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C87C37C8254E1E48002407DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C87C37D6254E1F2C002407DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C87C37DA254E1F57002407DB /* WelcomeScreenConfiguration+MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WelcomeScreenConfiguration+MyApp.swift"; sourceTree = "<group>"; };
+		C87C37E1254E3ADF002407DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				C87C37D6254E1F2C002407DB /* Assets.xcassets */,
 				C87C37BA254E1E47002407DB /* AppDelegate.swift */,
 				C87C37BC254E1E47002407DB /* SceneDelegate.swift */,
+				C87C37E1254E3ADF002407DB /* ViewController.swift */,
 				C87C37DA254E1F57002407DB /* WelcomeScreenConfiguration+MyApp.swift */,
 			);
 			path = Example;
@@ -148,6 +151,7 @@
 			files = (
 				C87C37BB254E1E47002407DB /* AppDelegate.swift in Sources */,
 				C87C37BD254E1E47002407DB /* SceneDelegate.swift in Sources */,
+				C87C37E2254E3ADF002407DB /* ViewController.swift in Sources */,
 				C87C37DB254E1F57002407DB /* WelcomeScreenConfiguration+MyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
