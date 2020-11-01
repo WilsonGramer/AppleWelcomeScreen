@@ -57,6 +57,8 @@ public class WelcomeScreenViewController: UIViewController {
         let titleStackView = UIStackView()
         titleStackView.axis = .vertical
         titleStackView.spacing = 4
+        titleStackView.isAccessibilityElement = true
+        titleStackView.accessibilityLabel = "Welcome to \(self.configuration.appName)"
         headingStackView.addArrangedSubview(titleStackView)
         titleStackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -155,6 +157,9 @@ public class WelcomeScreenViewController: UIViewController {
 private class FeatureView: UIView {
     init(for feature: WelcomeScreenFeature) {
         super.init(frame: .zero)
+
+        self.isAccessibilityElement = true
+        self.accessibilityLabel = "\(feature.title): \(feature.description)"
 
         let imageView = UIImageView()
         imageView.image = feature.image
