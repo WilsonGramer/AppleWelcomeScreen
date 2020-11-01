@@ -1,6 +1,0 @@
-framework module Pods_AppleWelcomeScreen_Example {
-  umbrella header "Pods-AppleWelcomeScreen_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

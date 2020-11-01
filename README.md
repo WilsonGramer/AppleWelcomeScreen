@@ -8,7 +8,7 @@
 
 AppleWelcomeScreen is a super-simple way to create a welcome screen/onboarding experience similar to the ones used in built-in iOS apps. For example, here's the Notes welcome screen recreated using AppleWelcomeScreen:
 
-| iPhone SE | iPhone X | iPhone Plus |
+| iPhone SE | iPhone X | iPhone 8 Plus |
 | --- | --- | --- |
 | ![example-se.png](readme-images/example-se.png) | ![example-x.png](readme-images/example-x.png) | ![example-plus.png](readme-images/example-plus.png) |
 
@@ -17,56 +17,59 @@ AppleWelcomeScreen is a super-simple way to create a welcome screen/onboarding e
 Just provide a configuration and you're good to go:
 
 ```swift
-var configuration = AWSConfigOptions()
-
-configuration.appName = "AwesomeApp"
-configuration.appDescription = "The greatest app ever."
-configuration.tintColor = .red
-
-var item1 = AWSItem()
-item1.image = UIImage(named: "item1")
-item1.title = "Do lots of stuff"
-item1.description = "AwesomeApp lets you do tons of awesome stuff."
-
-var item2 = AWSItem()
-item2.image = UIImage(named: "item2")
-item2.title = "Do even more cool stuff"
-item2.description = "We feature hundreds of things to do. Just select one or more features to activate."
-
-var item3 = AWSItem()
-item3.image = UIImage(named: "item3")
-item3.title = "Better with Pro"
-item3.description = "With an AwesomeApp Pro subscription, you'll have even more awesome features to use."
-
-configuration.items = [item1, item2, item3]
-
-configuration.continueButtonAction = {
-    self.dismiss(animated: true)
-    doAwesomeStuff()
+extension WelcomeScreenConfiguration {
+    static var myApp: WelcomeScreenConfiguration {
+        WelcomeScreenConfiguration(
+            appName: "My App",
+            appDescription: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit.",
+            features: [
+                WelcomeScreenFeature(
+                    image: UIImage(systemName: "circle.fill")!,
+                    title: "Lorem ipsum",
+                    description: "Lorem ipsum dolor sit amet."
+                ),
+                WelcomeScreenFeature(
+                    image: UIImage(systemName: "square.fill")!,
+                    title: "Dolor sit amet",
+                    description: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt."
+                ),
+                WelcomeScreenFeature(
+                    image: UIImage(systemName: "triangle.fill")!,
+                    title: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt",
+                    description: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit, sed do euismod tempor incdidunt ut labore et dolore magna aliqua."
+                ),
+            ]
+        )
+    }
 }
 
-let vc = AWSViewController()
-vc.configuration = configuration
-self.present(vc, animated: true)
+// In your view controller:
+self.present(WelcomeScreenViewController(configuration: .myApp), animated: true)
+
+// Or in SwiftUI:
+.sheet(isPresented: self.$showWelcomeScreen) {
+    WelcomeScreen(configuration: .myApp)
+}
 ```
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and open `Example/Example.xcodeproj`.
 
 ## Installation
 
-AppleWelcomeScreen is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+CocoaPods:
 
 ```ruby
 pod 'AppleWelcomeScreen'
 ```
 
-## Author
+Swift Package Manager:
 
-Wilsonator5000, wgramer03@gmail.com
+```swift
+.package(url: "https://github.com/WilsonGramer/AppleWelcomeScreen.git", from: "2.0.0")
+```
 
-## License
+## Contributing
 
-AppleWelcomeScreen is available under the MIT license. See the LICENSE file for more info.
+AppleWelcomeScreen encourages contributions! [Create an issue](https://github.com/WilsonGramer/AppleWelcomeScreen/issues/new) or submit a pull request.
