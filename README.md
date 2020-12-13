@@ -14,41 +14,37 @@ AppleWelcomeScreen is a super-simple way to create a welcome screen/onboarding e
 
 ## Usage
 
-Just provide a configuration and you're good to go:
+Provide a configuration and you're good to go:
 
 ```swift
-extension WelcomeScreenConfiguration {
-    static var myApp: WelcomeScreenConfiguration {
-        WelcomeScreenConfiguration(
-            appName: "My App",
-            appDescription: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit.",
-            features: [
-                WelcomeScreenFeature(
-                    image: UIImage(systemName: "circle.fill")!,
-                    title: "Lorem ipsum",
-                    description: "Lorem ipsum dolor sit amet."
-                ),
-                WelcomeScreenFeature(
-                    image: UIImage(systemName: "square.fill")!,
-                    title: "Dolor sit amet",
-                    description: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt."
-                ),
-                WelcomeScreenFeature(
-                    image: UIImage(systemName: "triangle.fill")!,
-                    title: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt",
-                    description: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit, sed do euismod tempor incdidunt ut labore et dolore magna aliqua."
-                ),
-            ]
-        )
-    }
-}
+let configuration = WelcomeScreenConfiguration(
+    appName: "My App",
+    appDescription: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit.",
+    features: [
+        WelcomeScreenFeature(
+            image: UIImage(systemName: "circle.fill")!,
+            title: "Lorem ipsum",
+            description: "Lorem ipsum dolor sit amet."
+        ),
+        WelcomeScreenFeature(
+            image: UIImage(systemName: "square.fill")!,
+            title: "Dolor sit amet",
+            description: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt."
+        ),
+        WelcomeScreenFeature(
+            image: UIImage(systemName: "triangle.fill")!,
+            title: "Consecteteur adipiscing elit, sed do euismod tempor incdidunt",
+            description: "Lorem ipsum dolor sit amet, consecteteur adipiscing elit, sed do euismod tempor incdidunt ut labore et dolore magna aliqua."
+        ),
+    ]
+)
 
 // In your view controller:
-self.present(WelcomeScreenViewController(configuration: .myApp), animated: true)
+self.present(WelcomeScreenViewController(configuration: configuration), animated: true)
 
 // Or in SwiftUI:
-.sheet(isPresented: self.$showWelcomeScreen) {
-    WelcomeScreen(configuration: .myApp)
+MyView().sheet(isPresented: self.$showWelcomeScreen) {
+    WelcomeScreen(configuration: configuration)
 }
 ```
 
