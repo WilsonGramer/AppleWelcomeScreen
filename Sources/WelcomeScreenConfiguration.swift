@@ -1,13 +1,15 @@
 import UIKit
 
 public struct WelcomeScreenConfiguration {
+    public var appWelcomeText: String
     public var appName: String
     public var appDescription: String
     public var features: [WelcomeScreenFeature]
     public var continueButton: ContinueButtonConfiguration
     public var tintColor: UIColor?
 
-    public init(appName: String, appDescription: String, features: [WelcomeScreenFeature], continueButton: ContinueButtonConfiguration = .init(), tintColor: UIColor? = nil) {
+    public init(appWelcomeText: String = "Welcome to", appName: String, appDescription: String, features: [WelcomeScreenFeature], continueButton: ContinueButtonConfiguration = .init(), tintColor: UIColor? = nil) {
+        self.appWelcomeText = appWelcomeText
         self.appName = appName
         self.appDescription = appDescription
         self.features = features
