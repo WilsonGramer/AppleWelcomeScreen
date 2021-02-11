@@ -24,10 +24,10 @@ public class WelcomeScreenViewController: UIViewController {
         self.view.addSubview(rootStackView)
         rootStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: rootStackView.topAnchor),
-            self.view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: rootStackView.bottomAnchor),
-            self.view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: rootStackView.leadingAnchor),
-            self.view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: rootStackView.trailingAnchor),
+            view.safeAreaLayoutGuide.centerXAnchor.constraint(equalTo: rootStackView.centerXAnchor),
+            view.safeAreaLayoutGuide.centerYAnchor.constraint(equalTo: rootStackView.centerYAnchor),
+            view.safeAreaLayoutGuide.widthAnchor.constraint(equalTo: rootStackView.widthAnchor, multiplier: 1.2),
+            view.safeAreaLayoutGuide.heightAnchor.constraint(equalTo: rootStackView.heightAnchor, multiplier: 1.15),
         ])
 
         let scrollView = UIScrollView()
@@ -41,11 +41,9 @@ public class WelcomeScreenViewController: UIViewController {
         scrollView.addSubview(scrollViewContent)
         scrollViewContent.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            scrollViewContent.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 24),
+            scrollViewContent.topAnchor.constraint(equalTo: scrollView.topAnchor),
             scrollViewContent.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            scrollViewContent.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 24),
-            scrollViewContent.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            scrollViewContent.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -48),
+            scrollViewContent.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
         ])
 
         let headingStackView = UIStackView()
@@ -120,9 +118,9 @@ public class WelcomeScreenViewController: UIViewController {
         continueButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             continueButton.topAnchor.constraint(equalTo: continueButtonContainer.topAnchor),
-            continueButton.bottomAnchor.constraint(equalTo: continueButtonContainer.bottomAnchor, constant: -24),
-            continueButton.leadingAnchor.constraint(equalTo: continueButtonContainer.leadingAnchor, constant: 24),
-            continueButton.trailingAnchor.constraint(equalTo: continueButtonContainer.trailingAnchor, constant: -24),
+            continueButton.bottomAnchor.constraint(equalTo: continueButtonContainer.bottomAnchor),
+            continueButton.leadingAnchor.constraint(equalTo: continueButtonContainer.leadingAnchor),
+            continueButton.trailingAnchor.constraint(equalTo: continueButtonContainer.trailingAnchor),
             continueButton.titleLabel!.topAnchor.constraint(equalTo: continueButton.topAnchor, constant: 12),
             continueButton.titleLabel!.bottomAnchor.constraint(equalTo: continueButton.bottomAnchor, constant: -12),
         ])
