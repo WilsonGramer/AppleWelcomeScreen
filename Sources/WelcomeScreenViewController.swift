@@ -24,10 +24,10 @@ public class WelcomeScreenViewController: UIViewController {
         self.view.addSubview(rootStackView)
         rootStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            view.safeAreaLayoutGuide.centerXAnchor.constraint(equalTo: rootStackView.centerXAnchor),
-            view.safeAreaLayoutGuide.centerYAnchor.constraint(equalTo: rootStackView.centerYAnchor),
-            view.safeAreaLayoutGuide.widthAnchor.constraint(equalTo: rootStackView.widthAnchor, multiplier: 1.2),
-            view.safeAreaLayoutGuide.heightAnchor.constraint(equalTo: rootStackView.heightAnchor, multiplier: 1.15),
+            self.view.safeAreaLayoutGuide.centerXAnchor.constraint(equalTo: rootStackView.centerXAnchor),
+            self.view.safeAreaLayoutGuide.centerYAnchor.constraint(equalTo: rootStackView.centerYAnchor),
+            self.view.safeAreaLayoutGuide.widthAnchor.constraint(equalTo: rootStackView.widthAnchor, multiplier: 1.2),
+            self.view.safeAreaLayoutGuide.heightAnchor.constraint(equalTo: rootStackView.heightAnchor, multiplier: 1.15),
         ])
 
         let scrollView = UIScrollView()
