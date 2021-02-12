@@ -56,12 +56,12 @@ public class WelcomeScreenViewController: UIViewController {
         titleStackView.axis = .vertical
         titleStackView.spacing = 4
         titleStackView.isAccessibilityElement = true
-        titleStackView.accessibilityLabel = configuration.appWelcomeText + " " + configuration.appName
+        titleStackView.accessibilityLabel = self.configuration.appWelcomeText + " " + self.configuration.appName
         headingStackView.addArrangedSubview(titleStackView)
         titleStackView.translatesAutoresizingMaskIntoConstraints = false
 
         let welcomeLabel = UILabel()
-        welcomeLabel.text = configuration.appWelcomeText
+        welcomeLabel.text = self.configuration.appWelcomeText
         welcomeLabel.font = .preferredFont(for: .largeTitle, weight: .bold)
         welcomeLabel.adjustsFontForContentSizeCategory = true
         welcomeLabel.textColor = .labelCompat
