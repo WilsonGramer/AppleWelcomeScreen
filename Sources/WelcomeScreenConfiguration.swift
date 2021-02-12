@@ -33,11 +33,13 @@ public struct WelcomeScreenFeature {
 public struct ContinueButtonConfiguration {
     public var title: String
     public var titleColor: UIColor
-    public var action: (WelcomeScreenViewController) -> Void
+    public var dismissAction: (WelcomeScreenViewController) -> Void
+    public var customAction: () -> Void
 
-    public init(title: String = "Continue", titleColor: UIColor = .white, action: @escaping (WelcomeScreenViewController) -> Void = { $0.dismiss(animated: true) }) {
+    public init(title: String = "Continue", titleColor: UIColor = .white, dismissAction: @escaping (WelcomeScreenViewController) -> Void = { $0.dismiss(animated: true) }, customAction: @escaping ()->Void = {}) {
         self.title = title
         self.titleColor = titleColor
-        self.action = action
+        self.dismissAction = dismissAction
+        self.customAction = customAction
     }
 }

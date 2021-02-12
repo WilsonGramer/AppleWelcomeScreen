@@ -138,7 +138,8 @@ public class WelcomeScreenViewController: UIViewController {
 
     @objc private func continueButtonTouchUpInside(_ continueButton: UIButton) {
         self.resetContinueButton(continueButton)
-        self.configuration.continueButton.action(self)
+        self.configuration.continueButton.customAction()
+        self.configuration.continueButton.dismissAction(self)
     }
 
     @objc private func continueButtonTouchCancel(_ continueButton: UIButton) {
