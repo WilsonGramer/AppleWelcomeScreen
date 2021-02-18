@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 13.0, *)
 public struct WelcomeScreen: UIViewControllerRepresentable {
     public let configuration: WelcomeScreenConfiguration
 

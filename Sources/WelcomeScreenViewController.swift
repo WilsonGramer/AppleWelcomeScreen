@@ -56,12 +56,12 @@ public class WelcomeScreenViewController: UIViewController {
         titleStackView.axis = .vertical
         titleStackView.spacing = 4
         titleStackView.isAccessibilityElement = true
-        titleStackView.accessibilityLabel = self.configuration.appWelcomeText + " " + self.configuration.appName
+        titleStackView.accessibilityLabel = self.configuration.welcomeAccessibilityLabel
         headingStackView.addArrangedSubview(titleStackView)
         titleStackView.translatesAutoresizingMaskIntoConstraints = false
 
         let welcomeLabel = UILabel()
-        welcomeLabel.text = self.configuration.appWelcomeText
+        welcomeLabel.text = self.configuration.welcomeString
         welcomeLabel.font = .preferredFont(for: .largeTitle, weight: .bold)
         welcomeLabel.adjustsFontForContentSizeCategory = true
         welcomeLabel.textColor = .labelCompat
@@ -138,8 +138,8 @@ public class WelcomeScreenViewController: UIViewController {
 
     @objc private func continueButtonTouchUpInside(_ continueButton: UIButton) {
         self.resetContinueButton(continueButton)
-        self.configuration.continueButton.customAction()
-        self.configuration.continueButton.dismissAction(self)
+        self.dismiss(animated: true)
+        self.configuration.continueButton.action?()
     }
 
     @objc private func continueButtonTouchCancel(_ continueButton: UIButton) {
@@ -158,7 +158,7 @@ private class FeatureView: UIView {
         super.init(frame: .zero)
 
         self.isAccessibilityElement = true
-        self.accessibilityLabel = "\(feature.title): \(feature.description)"
+        self.accessibilityLabel = feature.accessibilityLabel
 
         let imageView = UIImageView()
         imageView.image = feature.image
@@ -176,7 +176,7 @@ private class FeatureView: UIView {
 
         let titleLabel = UILabel()
         titleLabel.text = feature.title
-        titleLabel.font = .preferredFont(for: .body, weight: .bold)
+        titleLabel.font = .preferredFont(for: .body, weight: .semibold)
         titleLabel.textColor = .labelCompat
         titleLabel.numberOfLines = 0
         self.addSubview(titleLabel)
