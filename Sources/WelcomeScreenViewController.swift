@@ -121,8 +121,8 @@ public class WelcomeScreenViewController: UIViewController {
             continueButton.bottomAnchor.constraint(equalTo: continueButtonContainer.bottomAnchor),
             continueButton.leadingAnchor.constraint(equalTo: continueButtonContainer.leadingAnchor),
             continueButton.trailingAnchor.constraint(equalTo: continueButtonContainer.trailingAnchor),
-            continueButton.titleLabel!.topAnchor.constraint(equalTo: continueButton.topAnchor, constant: 12),
-            continueButton.titleLabel!.bottomAnchor.constraint(equalTo: continueButton.bottomAnchor, constant: -12),
+            continueButton.titleLabel!.topAnchor.constraint(equalTo: continueButton.topAnchor, constant: 16),
+            continueButton.titleLabel!.bottomAnchor.constraint(equalTo: continueButton.bottomAnchor, constant: -16),
         ])
     }
 
