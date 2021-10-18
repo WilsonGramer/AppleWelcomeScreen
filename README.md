@@ -63,7 +63,7 @@ pod 'AppleWelcomeScreen'
 Swift Package Manager:
 
 ```swift
-.package(url: "https://github.com/WilsonGramer/AppleWelcomeScreen.git", from: "2.0.0")
+.package(url: "https://github.com/WilsonGramer/AppleWelcomeScreen.git", from: "2.1.0")
 ```
 
 ## Contributing
